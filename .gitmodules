@@ -1,0 +1,3 @@
+[submodule "Nixie CPU Firmware/AVR-Common"]
+	path = Nixie CPU Firmware/AVR-Common
+	url = https://github.com/ilikecake/AVR-Common
