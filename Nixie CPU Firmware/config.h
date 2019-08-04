@@ -1,4 +1,6 @@
-/*   This program is free software: you can redistribute it and/or modify
+/*   This file is part of Nixie Clock Firmware
+*
+*	 Nixie Clock Firmware is free software: you can redistribute it and/or modify
 *    it under the terms of the GNU General Public License as published by
 *    the Free Software Foundation, either version 3 of the License, or
 *    (at your option) any later version.
@@ -18,7 +20,7 @@
 *	\version	1.0
 *	\date		1/2/2019
 *	\copyright	Copyright 2019, Pat Satyshur
-*	\ingroup 	common
+*	\ingroup 	nixie_clock_main
 *
 *	@{
 */
@@ -53,4 +55,6 @@ extern const char fwCompileDate[];				//The compile date/time string. This must 
 #if COMMAND_STAT_SHOW_MEM_USAGE == 1
 #include "mem_usage.h"									//The header that contains StackCount()
 #endif
+
+/** @} */
 

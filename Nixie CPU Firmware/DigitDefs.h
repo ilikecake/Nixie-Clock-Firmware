@@ -1,15 +1,6 @@
-/*
- * DigitDefs.h
- *
- * Created: 8/13/2018 8:56:54 PM
- *  Author: Pat
- *
- *  Definitions for the digits on the Nixie Tube Board
- *   Digit 4 is on the far left of the board, digit 1 is on the far right
- *
- *	Copyright 2018, Pat Satyshur
- *
- *	This program is free software: you can redistribute it and/or modify
+/*   This file is part of Nixie Clock Firmware
+ *	 
+ *	Nixie Clock Firmware is free software: you can redistribute it and/or modify
  *	it under the terms of the GNU General Public License as published by
  *	the Free Software Foundation, either version 3 of the License, or
  *	(at your option) any later version.
@@ -22,6 +13,19 @@
  *	You should have received a copy of the GNU General Public License
  *	along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */ 
+
+/** \file
+*	\brief		Definitions for the digits on the Nixie Tube Board
+*	\author		Pat Satyshur
+*	\version	1.0
+*	\date		8/13/2018
+*	\copyright	Copyright 2019, Pat Satyshur
+*	\ingroup 	nixie_clock_main
+*
+*	@{
+*/
+
+//Digit 4 is on the far left of the board, digit 1 is on the far right
 
 #ifndef DIGITDEFS_H_
 #define DIGITDEFS_H_
@@ -200,3 +204,5 @@
 #define DP_BOTTOM_DDR		DDRA
 
 #endif /* DIGITDEFS_H_ */
+
+/** @} */

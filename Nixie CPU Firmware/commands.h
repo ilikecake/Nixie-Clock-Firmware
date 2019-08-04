@@ -1,4 +1,6 @@
-/*   This program is free software: you can redistribute it and/or modify
+/*   This file is part of Nixie Clock Firmware
+*
+*	 Nixie Clock Firmware is free software: you can redistribute it and/or modify
 *    it under the terms of the GNU General Public License as published by
 *    the Free Software Foundation, either version 3 of the License, or
 *    (at your option) any later version.
@@ -15,10 +17,10 @@
 /** \file
 *	\brief		Command interpreter application specific functions
 *	\author		Pat Satyshur
-*	\version	1.1
-*	\date		1/13/2013
-*	\copyright	Copyright 2013, Pat Satyshur
-*	\ingroup 	beer_heater_main
+*	\version	1.0
+*	\date		8/3/2019
+*	\copyright	Copyright 2019, Pat Satyshur
+*	\ingroup 	nixie_clock_main
 *
 *	@{
 */

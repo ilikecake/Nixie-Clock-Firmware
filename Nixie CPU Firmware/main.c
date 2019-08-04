@@ -1,12 +1,6 @@
-/*
-* Nixie CPU Firmware.c
+/*   This file is part of Nixie Clock Firmware
 *
-* Created: 1/13/2018 12:34:59 PM
-* Author : Pat
-*
-* Copyright 2018, Pat Satyshur
-*
-*	This program is free software: you can redistribute it and/or modify
+*	 Nixie Clock Firmware is free software: you can redistribute it and/or modify
 *	it under the terms of the GNU General Public License as published by
 *	the Free Software Foundation, either version 3 of the License, or
 *	(at your option) any later version.
@@ -18,6 +12,19 @@
 *
 *	You should have received a copy of the GNU General Public License
 *	along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/** \file
+*	\brief		Main functions of the nixie clock firmware
+*	\author		Pat Satyshur
+*	\version	1.0
+*	\date		1/3/2018
+*	\copyright	Copyright 2019, Pat Satyshur
+*	\ingroup 	nixie_clock_main
+*
+*	\defgroup	nixie_clock_main Main code of the Nixie Clock Firmware
+*
+*	@{
 */
 
 //#define F_CPU 16000000UL  // 16 MHz
@@ -78,7 +85,7 @@ static inline void InitDigits(void);
 void SetDigit_Int(uint8_t Digit, uint8_t NumberToDisplay, uint8_t UpdateReg);
 
 //Non-volatile variables saved in EEPROM
-uint8_t EEMEM NV_TimeZone;			//Timezone to apply to the UTC time. Expressed in hours to be added to the UTC time
+uint8_t EEMEM NV_TimeZone;			//Timezone to apply to the UTC time. Expressed in hours to be added to the UTC time. TODO: Does this need to be able to handle negative numbers?
 uint32_t EEMEM NV_LatInSeconds;		//Latitude in arcseconds
 uint32_t EEMEM NV_LongInSeconds;	//Longitude in arcseconds
 uint8_t EEMEM NV_DimVal;			//Dimming value TODO: how to apply this??
@@ -1433,3 +1440,5 @@ int8_t GetTimeFromGPS(void)
 	
 	return StatusByte;
 }
+
+/** @} */
